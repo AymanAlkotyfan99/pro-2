@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1150" viewBox="0 0 900 1150" role="img"><defs>
+<linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f9f4e9"/><stop offset=".55" stop-color="#e5d8c7"/><stop offset="1" stop-color="#bda995"/></linearGradient>
+<linearGradient id="silk" x1="0" y1="0" x2="1" y2=".3"><stop stop-color="#8f8073"/><stop offset=".16" stop-color="#d1c3b0"/><stop offset=".37" stop-color="#fffaf0"/><stop offset=".6" stop-color="#e8ddce"/><stop offset=".77" stop-color="#ad9e8c"/><stop offset=".91" stop-color="#eee5d7"/><stop offset="1" stop-color="#fbf7ef"/></linearGradient>
+<linearGradient id="silk2" x1="0" y1=".25" x2="1" y2=".7"><stop stop-color="#e4dacb"/><stop offset=".35" stop-color="#fffdf7"/><stop offset=".66" stop-color="#d4c7b7"/><stop offset=".83" stop-color="#9b8977"/><stop offset="1" stop-color="#eee3d4"/></linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#66503a"/><stop offset=".2" stop-color="#b89562"/><stop offset=".34" stop-color="#f9e7b9"/><stop offset=".43" stop-color="#b29159"/><stop offset=".57" stop-color="#705236"/><stop offset=".72" stop-color="#dec694"/><stop offset=".89" stop-color="#fff0c9"/><stop offset="1" stop-color="#b49360"/></linearGradient>
+<linearGradient id="petal" x1=".2" y1="0" x2=".9" y2="1"><stop stop-color="#fffdf3"/><stop offset=".45" stop-color="#f3e9d7"/><stop offset=".74" stop-color="#dfccae"/><stop offset="1" stop-color="#8e775b"/></linearGradient>
+<linearGradient id="petal2" x1="0" y1=".1" x2="1" y2="1"><stop stop-color="#d6c0a5"/><stop offset=".27" stop-color="#fff8e9"/><stop offset=".65" stop-color="#eee1cc"/><stop offset="1" stop-color="#b0987c"/></linearGradient>
+<linearGradient id="leaf" x1="0" y1="0" x2="1" y2=".7"><stop stop-color="#8e947b"/><stop offset=".38" stop-color="#71765f"/><stop offset=".51" stop-color="#505644"/><stop offset="1" stop-color="#272f28"/></linearGradient>
+<linearGradient id="stem"><stop stop-color="#4b4a36"/><stop offset=".5" stop-color="#b8a782"/><stop offset="1" stop-color="#5c5741"/></linearGradient>
+<radialGradient id="wine"><stop stop-color="#7e3b45"/><stop offset=".52" stop-color="#461b26"/><stop offset="1" stop-color="#1e1019"/></radialGradient>
+<radialGradient id="night"><stop stop-color="#61474c"/><stop offset=".4" stop-color="#34232d"/><stop offset="1" stop-color="#140e15"/></radialGradient>
+<radialGradient id="moon"><stop stop-color="#fff9e6"/><stop offset=".85" stop-color="#eee0c5"/><stop offset="1" stop-color="#c8b998"/></radialGradient>
+<radialGradient id="light"><stop stop-color="#fff4d7" stop-opacity=".36"/><stop offset="1" stop-color="#f4d9a5" stop-opacity="0"/></radialGradient>
+<linearGradient id="calla" x1="0" y1="0" x2="1" y2=".8"><stop stop-color="#21101a"/><stop offset=".2" stop-color="#70343d"/><stop offset=".49" stop-color="#b16c70"/><stop offset=".65" stop-color="#5a252e"/><stop offset="1" stop-color="#29121e"/></linearGradient>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".78" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".11"/></feComponentTransfer><feBlend in="SourceGraphic" mode="soft-light"/></filter>
+<filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+<filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="6" dy="20" stdDeviation="15" flood-color="#251912" flood-opacity=".22"/></filter>
+<filter id="smallshadow" x="-35%" y="-35%" width="170%" height="170%"><feDropShadow dx="2" dy="6" stdDeviation="5" flood-color="#342315" flood-opacity=".23"/></filter>
+<g id="leafShape"><path d="M0 0C-62-21-82-87-69-143C-13-114 22-55 0 0Z" fill="url(#leaf)"/><path d="M0 0Q-31-72-69-143M-18-42L-50-60M-33-77L-65-92M-19-45L-8-77M-38-90L-33-113" fill="none" stroke="#c6c3a0" stroke-width="1" opacity=".3"/></g>
+<g id="petalShape"><path d="M0 15C-56 2-115-66-89-118C-73-150-18-145 3-99C20-61 35-22 0 15Z" fill="url(#petal)"/><path d="M1 8C-30-48-60-91-74-124" stroke="#fcf7e7" stroke-width="1.8" fill="none" opacity=".5"/></g>
+<g id="bloom"><use href="#petalShape" transform="rotate(2) scale(1.2)"/><use href="#petalShape" transform="rotate(65) scale(1.13)"/><use href="#petalShape" transform="rotate(132) scale(1.15)"/><use href="#petalShape" transform="rotate(198) scale(1.08)"/><use href="#petalShape" transform="rotate(268) scale(1.17)"/>
+<path d="M-16 9C-72-19-63-95-29-113C12-126 48-72 14-3Z" fill="url(#petal2)"/>
+<path d="M2 8C55-35 73-82 48-102C19-119-16-80-13-23Z" fill="url(#petal)"/>
+<path d="M-2 13C-25-7-34-54-10-65C15-79 26-27 12 1Z" fill="url(#petal2)"/>
+<ellipse cx="1" cy="7" rx="15" ry="10" fill="#9b8455"/>
+<path d="M5.0 9Q15.0 -8.0 22.0 -8.0" stroke="#c3aa72" stroke-width="2" fill="none"/><path d="M4.2 9Q12.5 -14.6 18.4 -18.4" stroke="#c3aa72" stroke-width="2" fill="none"/><path d="M2.0 9Q6.0 -19.0 8.8 -25.4" stroke="#c3aa72" stroke-width="2" fill="none"/><path d="M-0.8 9Q-2.5 -19.8 -3.7 -26.7" stroke="#c3aa72" stroke-width="2" fill="none"/><path d="M-3.4 9Q-10.2 -16.8 -15.0 -21.9" stroke="#c3aa72" stroke-width="2" fill="none"/><path d="M-4.9 9Q-14.6 -10.9 -21.4 -12.5" stroke="#c3aa72" stroke-width="2" fill="none"/><path d="M-4.7 9Q-14.1 -12.0 -20.8 -14.3" stroke="#c3aa72" stroke-width="2" fill="none"/><path d="M-3.0 9Q-9.1 -17.5 -13.4 -23.1" stroke="#c3aa72" stroke-width="2" fill="none"/><path d="M-0.4 9Q-1.1 -20.0 -1.6 -27.0" stroke="#c3aa72" stroke-width="2" fill="none"/><path d="M2.4 9Q7.3 -18.5 10.7 -24.6" stroke="#c3aa72" stroke-width="2" fill="none"/><path d="M4.4 9Q13.3 -13.6 19.5 -16.8" stroke="#c3aa72" stroke-width="2" fill="none"/><path d="M5.0 9Q14.9 -9.2 21.9 -9.8" stroke="#c3aa72" stroke-width="2" fill="none"/>
+</g>
+<g id="botanical">
+<path d="M85 1150C125 948 266 882 305 704S380 399 570 191M154 1010C91 833 115 668 65 482M253 827C402 773 499 672 686 649M333 586C275 419 326 314 312 191M410 412C533 414 635 355 709 234M197 918C307 948 416 921 491 860" stroke="url(#stem)" stroke-width="9" fill="none"/>
+<g opacity=".95">
+<use href="#leafShape" transform="translate(166 992) rotate(-49) scale(1.15)"/><use href="#leafShape" transform="translate(213 900) rotate(89) scale(1.1)"/>
+<use href="#leafShape" transform="translate(269 795) rotate(-24) scale(1.2)"/><use href="#leafShape" transform="translate(300 727) rotate(105) scale(1.13)"/>
+<use href="#leafShape" transform="translate(333 588) rotate(-15) scale(1.05)"/><use href="#leafShape" transform="translate(384 476) rotate(99) scale(.87)"/>
+<use href="#leafShape" transform="translate(489 282) rotate(40) scale(.84)"/><use href="#leafShape" transform="translate(469 322) rotate(-18) scale(.82)"/>
+<use href="#leafShape" transform="translate(591 388) rotate(119) scale(.91)"/><use href="#leafShape" transform="translate(641 333) rotate(28) scale(.76)"/>
+<use href="#leafShape" transform="translate(320 429) rotate(-42) scale(.9)"/><use href="#leafShape" transform="translate(320 343) rotate(68) scale(.7)"/>
+<use href="#leafShape" transform="translate(128 824) rotate(-43) scale(1.05)"/><use href="#leafShape" transform="translate(122 689) rotate(22) scale(.87)"/>
+<use href="#leafShape" transform="translate(460 735) rotate(48) scale(.82)"/><use href="#leafShape" transform="translate(531 699) rotate(117) scale(.95)"/>
+<use href="#leafShape" transform="translate(392 924) rotate(112) scale(.73)"/>
+</g>
+<use href="#bloom" transform="translate(302 646) rotate(12) scale(1.04)"/>
+<use href="#bloom" transform="translate(93 507) rotate(-29) scale(.8)"/>
+<use href="#bloom" transform="translate(590 223) rotate(24) scale(.72)"/>
+<use href="#bloom" transform="translate(660 646) rotate(61) scale(.9)"/>
+<use href="#bloom" transform="translate(489 865) rotate(20) scale(.57)"/>
+<path d="M310 211C272 184 284 124 307 112C339 129 353 183 310 211Z" fill="url(#petal2)"/>
+<path d="M711 244C676 218 691 175 714 169C749 184 738 226 711 244Z" fill="url(#petal)"/>
+</g>
+</defs><use href="#botanical"/></svg>

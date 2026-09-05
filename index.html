@@ -1,0 +1,1006 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#3B161D" />
+    <meta
+      name="description"
+      content="ليلة كُتبت بالنور — أحمد ومريم. الثامن عشر من أكتوبر، دمشق. ندعوكم إلى أول صفحة من حكايتنا."
+    />
+    <title>أحمد و مريم — ليلة كُتبت بالنور</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body class="intro-pending">
+    <a class="skip-link" href="#date-scene">تجاوز إلى تفاصيل الليلة</a>
+
+    <div id="preloader" class="preloader" role="status" aria-live="polite">
+      <p>حكاية جديدة تُكتب...</p>
+      <span class="preloader-line" aria-hidden="true"></span>
+      <span class="preloader-caption">يرجى الانتظار</span>
+    </div>
+
+    <div id="intro" class="intro" aria-label="بداية حكاية زفافنا">
+      <div class="curtain-light" aria-hidden="true"></div>
+      <div class="left-curtain curtain" aria-hidden="true"></div>
+      <div class="right-curtain curtain" aria-hidden="true"></div>
+      <div class="intro-border" aria-hidden="true"></div>
+      <div class="intro-heading">
+        <span>لكل لحظة… حكاية</span>
+      </div>
+      <button
+        id="open-story"
+        class="open-story"
+        type="button"
+        aria-label="افتح الستائر وابدأ حكاية زفاف أحمد ومريم"
+      >
+        <span class="intro-monogram"
+          ><span data-initial-groom>أ</span><i>و</i
+          ><span data-initial-bride>م</span></span
+        >
+        <span class="intro-title">ليلة كُتبت بالنور</span>
+        <span class="intro-ornament" aria-hidden="true"><i></i><i></i></span>
+        <span class="intro-prompt">اضغط لبدء الحكاية</span>
+        <span class="intro-tap" aria-hidden="true">↓</span>
+      </button>
+      <span class="intro-edition" dir="ltr">A WEDDING STORY · 2026</span>
+      <button
+        id="skip-intro"
+        class="skip-intro"
+        type="button"
+        aria-label="تجاوز المقدمة وانتقل إلى الحكاية"
+      >
+        تجاوز المقدمة <span aria-hidden="true">↗</span>
+      </button>
+    </div>
+
+    <div id="dust" class="dust" aria-hidden="true"></div>
+    <div id="petals" class="petals" aria-hidden="true"></div>
+    <div id="pointer-light" aria-hidden="true"></div>
+    <div id="scroll-progress" aria-hidden="true"></div>
+    <button
+      id="audio-toggle"
+      class="audio-toggle"
+      type="button"
+      aria-label="تشغيل الموسيقى"
+      aria-pressed="false"
+      hidden
+    >
+      <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+
+    <main id="main-content">
+      <section
+        id="hero"
+        class="hero scene-dark"
+        data-scene
+        aria-labelledby="couple-names"
+      >
+        <div class="hero-sky" data-parallax="0.035" aria-hidden="true"></div>
+        <div
+          class="hero-moon moon"
+          data-parallax="0.06"
+          aria-hidden="true"
+        ></div>
+        <div class="palace" data-parallax="0.025" aria-hidden="true">
+          <svg
+            viewBox="0 0 1000 1050"
+            fill="none"
+            preserveAspectRatio="xMidYMin slice"
+          >
+            <defs>
+              <linearGradient id="arch-gold" x1="0" y1="0" x2="0" y2="1">
+                <stop stop-color="#D8C09D" stop-opacity=".8" />
+                <stop offset="1" stop-color="#B89562" stop-opacity=".08" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M65 1050V487C65 240 323 111 500 22C677 111 935 240 935 487V1050"
+              stroke="url(#arch-gold)"
+              stroke-width="2"
+            />
+            <path
+              d="M90 1050V490C90 258 335 134 500 52C665 134 910 258 910 490V1050"
+              stroke="url(#arch-gold)"
+              stroke-width=".7"
+            />
+            <path
+              d="M117 1050V495C117 275 347 158 500 84C653 158 883 275 883 495V1050"
+              stroke="url(#arch-gold)"
+              stroke-width="1"
+            />
+            <path
+              d="M140 1050V499C140 295 360 181 500 115C640 181 860 295 860 499V1050"
+              stroke="url(#arch-gold)"
+              stroke-width=".5"
+            />
+            <path
+              d="M47 491H143M858 491H953M48 509H141M860 509H952M55 520V1050M79 520V1050M921 520V1050M945 520V1050"
+              stroke="url(#arch-gold)"
+            />
+            <path
+              d="m500 16 8 13-8 13-8-13zM104 491l13-18 13 18-13 18zm766 0 13-18 13 18-13 18z"
+              stroke="#D8C09D"
+              stroke-opacity=".4"
+            />
+          </svg>
+        </div>
+        <div class="hero-photo optional-image" aria-hidden="true">
+          <img
+            data-optional-src="assets/hero-couple.jpg"
+            alt=""
+            decoding="async"
+          />
+        </div>
+        <span class="hero-topline">بكل الحب، ندعوكم إلى</span>
+        <span class="hero-side-note" dir="ltr">DAMASCUS · A LOVE STORY</span>
+        <div class="hero-prologue" aria-hidden="true">
+          <p data-prologue="1">في ليلةٍ اختارها القلب...</p>
+          <p data-prologue="2">ليبدأ العمر من جديد.</p>
+        </div>
+        <div class="hero-sequence">
+          <p class="hero-bismillah">بسم الله نبدأ أجمل فصول الحكاية.</p>
+          <div class="names-composition">
+            <span class="names-watermark" aria-hidden="true">و</span>
+            <svg
+              class="calligraphy flourish-top"
+              viewBox="0 0 480 100"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                data-draw
+                pathLength="1"
+                d="M45 75C110 88 118 15 178 29C204 35 175 70 151 52C133 37 180 6 241 40C292 69 310 27 350 32C373 34 352 62 333 52C321 45 355 21 405 30M226 37C227 26 237 13 247 11M260 47C267 42 271 37 273 31M64 73C52 87 27 89 25 78C23 71 43 65 45 75"
+              />
+            </svg>
+            <h1 id="couple-names" class="couple-names">
+              <span class="groom-name" data-groom>أحمد</span
+              ><span class="name-ampersand" aria-label="و">&amp;</span
+              ><span class="bride-name" data-bride>مريم</span>
+            </h1>
+            <svg
+              class="calligraphy flourish-bottom"
+              viewBox="0 0 480 80"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                data-draw
+                pathLength="1"
+                d="M20 33C82 18 88 61 143 49C190 39 194 13 221 20C244 26 211 52 201 37C193 24 230 13 267 36C315 66 348 22 392 32C427 41 445 36 460 20M119 52C105 69 83 70 76 61M286 47C283 57 277 62 269 64"
+              />
+            </svg>
+          </div>
+          <p class="hero-blessing">جمعنا الله على مودةٍ ورحمة.</p>
+          <p class="hero-invitation">يسعدنا أن نشارككم فرحة زواجنا.</p>
+          <div class="hero-date">
+            <span data-date-day>18</span><i></i
+            ><span data-date-month>أكتوبر</span><i></i
+            ><span data-date-year>2026</span>
+          </div>
+        </div>
+        <img
+          class="hero-botanical botanical-right"
+          src="assets/botanical.svg"
+          alt=""
+          aria-hidden="true"
+          data-parallax="0.08"
+        />
+        <img
+          class="hero-botanical botanical-left"
+          src="assets/botanical.svg"
+          alt=""
+          aria-hidden="true"
+          data-parallax="0.05"
+        />
+        <div class="hero-fog" aria-hidden="true"></div>
+        <a class="scroll-invitation" href="#date-scene"
+          ><span>للحكاية بقية</span><i aria-hidden="true"></i
+        ></a>
+        <span class="hero-footer-note" dir="ltr">HEKAYA STUDIO</span>
+      </section>
+
+      <section
+        id="date-scene"
+        class="date-scene scene-pearl light-transition"
+        data-scene
+        aria-labelledby="date-title"
+      >
+        <div class="flower-shadow" aria-hidden="true"></div>
+        <span class="scene-kicker reveal" dir="ltr">THE DAY WE BECOME ONE</span>
+        <div class="text-mask">
+          <h2 id="date-title">احفظوا هذا التاريخ.</h2>
+        </div>
+        <div class="date-art reveal-scale">
+          <svg
+            class="date-frame"
+            viewBox="0 0 440 440"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path data-draw pathLength="1" d="M220 12H418V428H22V12H220" />
+            <path data-draw pathLength="1" d="M208 12 220 0 232 12 220 24Z" />
+          </svg>
+          <span class="date-day" data-date-day>18</span>
+          <span class="date-month" data-date-month>أكتوبر</span>
+          <span class="date-numeric" dir="ltr"
+            ><span data-date-month-number>10</span><i>/</i
+            ><span data-date-year>2026</span></span
+          >
+          <span class="date-weekday" data-date-weekday>الأحد</span>
+        </div>
+        <p class="date-time reveal-up" data-time-words>
+          الساعة السادسة والنصف مساءً
+        </p>
+      </section>
+
+      <section
+        id="story"
+        class="story scene-pearl"
+        aria-labelledby="story-title"
+      >
+        <header class="story-introduction" data-scene>
+          <span class="scene-kicker reveal" dir="ltr"
+            >EVERY LOVE HAS A BEGINNING</span
+          >
+          <div class="text-mask">
+            <h2 id="story-title">قبل أن نصل إلى هذه الليلة...</h2>
+          </div>
+          <div class="text-mask story-heading-second">
+            <span>كانت هناك <em>حكاية.</em></span>
+          </div>
+          <span class="fine-line reveal-line" aria-hidden="true"></span>
+        </header>
+        <article class="story-chapter chapter-one" data-scene>
+          <span class="chapter-number" aria-hidden="true">01</span>
+          <div class="story-art reveal-mask">
+            <div class="artwork" data-parallax="0.06">
+              <img
+                class="art-fallback"
+                src="assets/story-1.svg"
+                alt="زهرة عاجية تتفتح في ضوء هادئ"
+                loading="lazy"
+              /><img
+                data-optional-src="assets/story-1.jpg"
+                alt="البداية"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <span class="image-edition" dir="ltr">I. THE BEGINNING</span>
+          </div>
+          <div class="chapter-copy">
+            <span class="chapter-eyebrow reveal">الفصل الأول</span>
+            <div class="text-mask"><h3>البداية</h3></div>
+            <p class="reveal-up">
+              قد تبدأ بعض الحكايات بلحظة صغيرة،<br />لكنها تكبر حتى تصبح عمرًا
+              كاملًا.
+            </p>
+            <span class="chapter-dash reveal-line" aria-hidden="true"></span>
+          </div>
+        </article>
+        <article class="story-chapter chapter-two" data-scene>
+          <span class="chapter-number" aria-hidden="true">02</span>
+          <div class="story-art reveal-mask">
+            <div class="artwork" data-parallax="0.055">
+              <img
+                class="art-fallback"
+                src="assets/story-2.svg"
+                alt="خاتمان ذهبيان يلتقيان فوق الحرير"
+                loading="lazy"
+              /><img
+                data-optional-src="assets/story-2.jpg"
+                alt="الوعد"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <span class="image-edition" dir="ltr">II. THE PROMISE</span>
+          </div>
+          <div class="chapter-copy">
+            <span class="chapter-eyebrow reveal">الفصل الثاني</span>
+            <div class="text-mask"><h3>الوعد</h3></div>
+            <p class="reveal-up">
+              ومن بين آلاف الطرق،<br />اختار قلبان أن يكملا الطريق معًا.
+            </p>
+            <span class="chapter-dash reveal-line" aria-hidden="true"></span>
+          </div>
+        </article>
+        <article class="story-chapter chapter-three" data-scene>
+          <span class="chapter-number" aria-hidden="true">03</span>
+          <div class="story-art reveal-mask">
+            <div class="artwork" data-parallax="0.05">
+              <img
+                class="art-fallback"
+                src="assets/story-3.svg"
+                alt="قوس مضاء بضوء القمر، بداية ليلة جديدة"
+                loading="lazy"
+              /><img
+                data-optional-src="assets/story-3.jpg"
+                alt="اليوم"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <span class="image-edition" dir="ltr">III. OUR FOREVER</span>
+          </div>
+          <div class="chapter-copy">
+            <span class="chapter-eyebrow reveal">الفصل الثالث</span>
+            <div class="text-mask"><h3>اليوم</h3></div>
+            <p class="reveal-up">
+              واليوم...<br />لا نعلن عن موعدٍ فقط،<br />بل عن بداية حياة.
+            </p>
+            <span class="chapter-dash reveal-line" aria-hidden="true"></span>
+          </div>
+        </article>
+      </section>
+
+      <section
+        id="initials-scene"
+        class="initials-scene scene-pearl"
+        data-scene
+        aria-labelledby="initials-title"
+      >
+        <div class="initials-stage">
+          <span class="scene-kicker reveal" dir="ltr"
+            >WRITTEN IN THE STARS</span
+          >
+          <h2 id="initials-title" class="initials-caption reveal-up">
+            بعض المسافات خُلقت لتختفي.
+          </h2>
+          <div class="initials-composition" aria-label="أ و م، يجمعهما الحب">
+            <span class="initial initial-groom" data-initial-groom>أ</span
+            ><span class="initial-line" aria-hidden="true"></span
+            ><span class="initial-heart" aria-hidden="true">♡</span
+            ><span class="initial initial-bride" data-initial-bride>م</span>
+          </div>
+          <p class="initials-ending">ومن هنا تبدأ الحكاية.</p>
+          <span class="initials-footnote" dir="ltr">TWO SOULS. ONE STORY.</span>
+        </div>
+      </section>
+
+      <section
+        id="countdown-scene"
+        class="countdown-scene scene-wine"
+        data-scene
+        aria-labelledby="countdown-title"
+      >
+        <span class="scene-kicker reveal" dir="ltr"
+          >A LITTLE CLOSER TO FOREVER</span
+        >
+        <div class="text-mask"><h2 id="countdown-title">حتى نلتقي...</h2></div>
+        <p class="countdown-intro reveal-up">كل لحظة تقرّبنا من أجمل ليلة.</p>
+        <div
+          id="countdown"
+          class="countdown reveal-up"
+          role="timer"
+          aria-label="الوقت المتبقي للزفاف"
+          dir="rtl"
+        >
+          <div class="countdown-unit">
+            <div class="countdown-number" data-countdown="days">
+              <span class="digit-current">00</span>
+            </div>
+            <span class="countdown-label">يوم</span>
+          </div>
+          <div class="countdown-unit">
+            <div class="countdown-number" data-countdown="hours">
+              <span class="digit-current">00</span>
+            </div>
+            <span class="countdown-label">ساعة</span>
+          </div>
+          <div class="countdown-unit">
+            <div class="countdown-number" data-countdown="minutes">
+              <span class="digit-current">00</span>
+            </div>
+            <span class="countdown-label">دقيقة</span>
+          </div>
+          <div class="countdown-unit">
+            <div class="countdown-number" data-countdown="seconds">
+              <span class="digit-current">00</span>
+            </div>
+            <span class="countdown-label">ثانية</span>
+          </div>
+        </div>
+        <p
+          id="countdown-message"
+          class="countdown-message"
+          role="status"
+          hidden
+        ></p>
+        <span class="countdown-date reveal" data-date-full>18 أكتوبر 2026</span>
+      </section>
+
+      <section
+        id="details"
+        class="details scene-pearl"
+        data-scene
+        aria-labelledby="details-title"
+      >
+        <span class="scene-kicker reveal" dir="ltr"
+          >AN EVENING TO REMEMBER</span
+        >
+        <div class="text-mask"><h2 id="details-title">موعدنا</h2></div>
+        <p class="details-intro reveal-up">
+          تكتمل فرحتنا حين تجمعنا هذه الليلة بكم.
+        </p>
+        <div class="event-arches">
+          <article class="event-arch reveal-up">
+            <svg
+              class="arch-outline"
+              viewBox="0 0 280 410"
+              preserveAspectRatio="none"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                data-draw
+                pathLength="1"
+                d="M8 400V157C8 82 75 33 140 8C205 33 272 82 272 157V400Z"
+              />
+              <path
+                data-draw
+                pathLength="1"
+                d="M17 391V158C17 89 80 43 140 18C200 43 263 89 263 158V391Z"
+              /></svg
+            ><svg
+              class="event-icon"
+              viewBox="0 0 40 40"
+              fill="none"
+              aria-hidden="true"
+            >
+              <rect x="8" y="10" width="24" height="24" rx="1" />
+              <path d="M8 17h24M14 6v8M26 6v8M14 23h4m4 0h4m-12 5h4m4 0h4" />
+            </svg>
+            <h3>التاريخ</h3>
+            <p data-date-full>18 أكتوبر 2026</p>
+            <span data-date-weekday>الأحد</span
+            ><i class="arch-dot" aria-hidden="true"></i>
+          </article>
+          <article class="event-arch reveal-up">
+            <svg
+              class="arch-outline"
+              viewBox="0 0 280 410"
+              preserveAspectRatio="none"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                data-draw
+                pathLength="1"
+                d="M8 400V157C8 82 75 33 140 8C205 33 272 82 272 157V400Z"
+              />
+              <path
+                data-draw
+                pathLength="1"
+                d="M17 391V158C17 89 80 43 140 18C200 43 263 89 263 158V391Z"
+              /></svg
+            ><svg
+              class="event-icon"
+              viewBox="0 0 40 40"
+              fill="none"
+              aria-hidden="true"
+            >
+              <circle cx="20" cy="21" r="13" />
+              <path d="M20 12v10l7 4M17 4h6" />
+            </svg>
+            <h3>الوقت</h3>
+            <p data-time>6:30 مساءً</p>
+            <span>تبدأ أجمل لحظاتنا</span
+            ><i class="arch-dot" aria-hidden="true"></i>
+          </article>
+          <article class="event-arch reveal-up">
+            <svg
+              class="arch-outline"
+              viewBox="0 0 280 410"
+              preserveAspectRatio="none"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                data-draw
+                pathLength="1"
+                d="M8 400V157C8 82 75 33 140 8C205 33 272 82 272 157V400Z"
+              />
+              <path
+                data-draw
+                pathLength="1"
+                d="M17 391V158C17 89 80 43 140 18C200 43 263 89 263 158V391Z"
+              /></svg
+            ><svg
+              class="event-icon"
+              viewBox="0 0 40 40"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M8 34V19C8 13 14 8 20 5C26 8 32 13 32 19V34ZM14 34V22a6 6 0 0 1 12 0v12M5 34h30"
+              />
+            </svg>
+            <h3>المكان</h3>
+            <p data-location>قاعة الحكاية</p>
+            <span data-city>دمشق</span
+            ><i class="arch-dot" aria-hidden="true"></i>
+          </article>
+        </div>
+      </section>
+
+      <section
+        id="gallery"
+        class="gallery scene-pearl"
+        data-scene
+        aria-labelledby="gallery-title"
+      >
+        <header class="gallery-heading">
+          <div>
+            <span class="scene-kicker reveal" dir="ltr"
+              >THE BEAUTY IN THE LITTLE THINGS</span
+            >
+            <div class="text-mask">
+              <h2 id="gallery-title">تفاصيل من الحكاية.</h2>
+            </div>
+          </div>
+          <p class="reveal-up">أشياء صغيرة.<br />ومشاعر لا تُنسى.</p>
+        </header>
+        <div class="gallery-editorial">
+          <button
+            class="gallery-item gallery-item-1 reveal-mask"
+            data-gallery-index="0"
+            data-title="نورٌ يشبه البداية"
+            type="button"
+            aria-label="تكبير الصورة الأولى: نور يشبه البداية"
+          >
+            <span class="artwork" data-parallax="0.04"
+              ><img
+                class="art-fallback"
+                src="assets/gallery-1.svg"
+                alt="تكوين فني من الحرير واللؤلؤ"
+                loading="lazy" /><img
+                data-optional-src="assets/gallery-1.jpg"
+                alt="نور يشبه البداية"
+                loading="lazy"
+                decoding="async" /></span
+            ><span class="gallery-caption"
+              ><span>نورٌ يشبه البداية</span><i dir="ltr">01 / 06</i></span
+            ><span class="gallery-open" aria-hidden="true">↗</span>
+          </button>
+          <button
+            class="gallery-item gallery-item-2 reveal-mask"
+            data-gallery-index="1"
+            data-title="وردٌ يحتفظ بالوعد"
+            type="button"
+            aria-label="تكبير الصورة الثانية: ورد يحتفظ بالوعد"
+          >
+            <span class="artwork" data-parallax="0.06"
+              ><img
+                class="art-fallback"
+                src="assets/gallery-2.svg"
+                alt="زهرة عنابية بإضاءة شاعرية"
+                loading="lazy" /><img
+                data-optional-src="assets/gallery-2.jpg"
+                alt="ورد يحتفظ بالوعد"
+                loading="lazy"
+                decoding="async" /></span
+            ><span class="gallery-caption"
+              ><span>وردٌ يحتفظ بالوعد</span><i dir="ltr">02 / 06</i></span
+            ><span class="gallery-open" aria-hidden="true">↗</span>
+          </button>
+          <div class="gallery-quote reveal-up">
+            <span aria-hidden="true">“</span>
+            <p>للحبّ تفاصيل،<br />ولكلّ تفصيلة <em>حكاية.</em></p>
+          </div>
+          <button
+            class="gallery-item gallery-item-3 reveal-mask"
+            data-gallery-index="2"
+            data-title="نعومة اللحظة الأولى"
+            type="button"
+            aria-label="تكبير الصورة الثالثة: نعومة اللحظة الأولى"
+          >
+            <span class="artwork" data-parallax="0.05"
+              ><img
+                class="art-fallback"
+                src="assets/gallery-3.svg"
+                alt="طيات قماش عاجي في ضوء الشمس"
+                loading="lazy" /><img
+                data-optional-src="assets/gallery-3.jpg"
+                alt="نعومة اللحظة الأولى"
+                loading="lazy"
+                decoding="async" /></span
+            ><span class="gallery-caption"
+              ><span>نعومة اللحظة الأولى</span><i dir="ltr">03 / 06</i></span
+            ><span class="gallery-open" aria-hidden="true">↗</span>
+          </button>
+          <button
+            class="gallery-item gallery-item-4 reveal-mask"
+            data-gallery-index="3"
+            data-title="ليلة كُتبت بالنور"
+            type="button"
+            aria-label="تكبير الصورة الرابعة: ليلة كتبت بالنور"
+          >
+            <span class="artwork" data-parallax="0.07"
+              ><img
+                class="art-fallback"
+                src="assets/gallery-4.svg"
+                alt="قمر فوق قوس قصر عربي"
+                loading="lazy" /><img
+                data-optional-src="assets/gallery-4.jpg"
+                alt="ليلة كتبت بالنور"
+                loading="lazy"
+                decoding="async" /></span
+            ><span class="gallery-caption"
+              ><span>ليلة كُتبت بالنور</span><i dir="ltr">04 / 06</i></span
+            ><span class="gallery-open" aria-hidden="true">↗</span>
+          </button>
+          <button
+            class="gallery-item gallery-item-5 reveal-mask"
+            data-gallery-index="4"
+            data-title="كلمات من القلب"
+            type="button"
+            aria-label="تكبير الصورة الخامسة: كلمات من القلب"
+          >
+            <span class="artwork" data-parallax="0.035"
+              ><img
+                class="art-fallback"
+                src="assets/gallery-5.svg"
+                alt="ورق قطني وزهرة عاجية"
+                loading="lazy" /><img
+                data-optional-src="assets/gallery-5.jpg"
+                alt="كلمات من القلب"
+                loading="lazy"
+                decoding="async" /></span
+            ><span class="gallery-caption"
+              ><span>كلمات من القلب</span><i dir="ltr">05 / 06</i></span
+            ><span class="gallery-open" aria-hidden="true">↗</span>
+          </button>
+          <button
+            class="gallery-item gallery-item-6 reveal-mask"
+            data-gallery-index="5"
+            data-title="دائرتان، وعمرٌ واحد"
+            type="button"
+            aria-label="تكبير الصورة السادسة: دائرتان وعمر واحد"
+          >
+            <span class="artwork" data-parallax="0.045"
+              ><img
+                class="art-fallback"
+                src="assets/gallery-6.svg"
+                alt="خاتمان من الذهب العتيق فوق العاج"
+                loading="lazy" /><img
+                data-optional-src="assets/gallery-6.jpg"
+                alt="دائرتان وعمر واحد"
+                loading="lazy"
+                decoding="async" /></span
+            ><span class="gallery-caption"
+              ><span>دائرتان، وعمرٌ واحد</span><i dir="ltr">06 / 06</i></span
+            ><span class="gallery-open" aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </section>
+
+      <section
+        id="location-scene"
+        class="location-scene"
+        data-scene
+        aria-labelledby="location-title"
+      >
+        <div class="map-art" aria-hidden="true">
+          <svg
+            viewBox="0 0 1400 650"
+            fill="none"
+            preserveAspectRatio="xMidYMid slice"
+          >
+            <g stroke="currentColor">
+              <path
+                d="M-50 120 170 135 300 10 450 90 540 230 710 160 820 15 940 95 1180 35 1420 100M-30 300 180 280 315 190 480 330 650 275 835 325 1030 200 1210 320 1450 290M-40 570 160 410 350 510 525 440 680 570 880 445 1030 560 1220 440 1450 550M150-40 170 135 180 280 160 410 200 700M430-50 450 90 480 330 525 440 510 700M830-40 820 15 835 325 880 445 800 700M1190-50 1180 35 1210 320 1220 440 1250 700"
+                stroke-width="7"
+              />
+              <path
+                d="M-50 220 200 190 350 90 550 160 720 85M50 30 70 280 35 510M290-30 300 90 315 190 350 510 330 700M560-30 580 140 650 275 680 570 690 700M1030-20 1030 200 1030 560 990 700M1340-40 1350 290 1340 650M0 380 160 355 360 405 535 370 720 380 890 390 1090 345 1400 390M200 600 400 570 510 620 670 640 880 590"
+                stroke-width="2"
+              />
+            </g>
+            <path
+              d="M-50 490C240 210 405 710 700 420S1120 140 1450 430"
+              stroke="#bba593"
+              stroke-width="20"
+              opacity=".35"
+            />
+          </svg>
+        </div>
+        <div class="location-content">
+          <span class="scene-kicker reveal" dir="ltr"
+            >MEET US UNDER THE MOON</span
+          >
+          <div class="text-mask">
+            <h2 id="location-title">إلى حيث تبدأ الحكاية.</h2>
+          </div>
+          <p class="location-name reveal-up" data-location>قاعة الحكاية</p>
+          <span class="location-city reveal" data-city>دمشق</span
+          ><a
+            class="editorial-link reveal-up"
+            href="https://maps.google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="افتح الموقع في خرائط جوجل، نافذة جديدة"
+            ><span>افتح الموقع</span
+            ><span class="link-arrow" aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+
+      <section
+        id="poetry"
+        class="poetry scene-pearl"
+        data-scene
+        aria-labelledby="poetry-title"
+      >
+        <div class="flower-shadow" aria-hidden="true"></div>
+        <h2 id="poetry-title" class="poem">
+          <span class="poem-line"
+            ><span class="reveal-up" style="--delay: 0ms">لسنا</span>
+            <span class="reveal-up" style="--delay: 160ms">ندعوكم</span>
+            <span class="reveal-up" style="--delay: 320ms">إلى</span>
+            <span class="reveal-up" style="--delay: 480ms">مكان...</span></span
+          ><span class="poem-line"
+            ><span class="reveal-up" style="--delay: 1100ms">بل</span>
+            <span class="reveal-up" style="--delay: 1260ms">ندعوكم</span>
+            <span class="reveal-up" style="--delay: 1420ms">إلى</span>
+            <span class="reveal-up" style="--delay: 1580ms">ذكرى.</span></span
+          ><span class="poem-line poem-final"
+            ><span class="reveal-up" style="--delay: 2400ms">وجودكم</span>
+            <span class="reveal-up" style="--delay: 2580ms">يجعل</span>
+            <span class="reveal-up" style="--delay: 2760ms">الحكاية</span>
+            <span class="reveal-up" style="--delay: 2940ms">أجمل.</span></span
+          >
+        </h2>
+      </section>
+
+      <section
+        id="rings-scene"
+        class="rings-scene scene-pearl"
+        data-scene
+        aria-labelledby="rings-title"
+      >
+        <span class="scene-kicker reveal" dir="ltr">THE ART OF FOREVER</span>
+        <div class="rings-composition" aria-hidden="true">
+          <span class="wedding-ring ring-one"></span
+          ><span class="wedding-ring ring-two"></span>
+        </div>
+        <h2 id="rings-title">
+          <span class="rings-first">وَعَاشَا...</span
+          ><span class="rings-last">الحكاية.</span>
+        </h2>
+      </section>
+
+      <section
+        id="rsvp"
+        class="rsvp scene-pearl"
+        data-scene
+        aria-labelledby="rsvp-title"
+      >
+        <span class="scene-kicker reveal" dir="ltr"
+          >YOUR PRESENCE IS OUR PRESENT</span
+        >
+        <div class="text-mask">
+          <h2 id="rsvp-title">هل ستكونون جزءًا من حكايتنا؟</h2>
+        </div>
+        <p class="rsvp-intro reveal-up">مكانكم في القلب، ومقعدكم ينتظركم.</p>
+        <form id="rsvp-form" class="rsvp-form reveal-up">
+          <div class="form-fields">
+            <label for="guest-name"
+              >الاسم<input
+                id="guest-name"
+                name="guestName"
+                type="text"
+                autocomplete="name"
+                placeholder="اسمكم الكريم"
+                maxlength="80"
+                required /></label
+            ><label for="guest-count"
+              >عدد الضيوف<input
+                id="guest-count"
+                name="guestCount"
+                type="number"
+                inputmode="numeric"
+                min="1"
+                max="12"
+                value="1"
+                required
+            /></label>
+          </div>
+          <div class="rsvp-actions">
+            <button
+              type="submit"
+              name="response"
+              value="accept"
+              class="editorial-link accept-link"
+              aria-label="تأكيد يسعدني الحضور"
+            >
+              <span>يسعدني الحضور</span
+              ><span class="link-arrow" aria-hidden="true">↗</span></button
+            ><button
+              type="submit"
+              name="response"
+              value="decline"
+              class="decline-link"
+              aria-label="تأكيد أعتذر بكل محبة"
+            >
+              أعتذر بكل محبة
+            </button>
+          </div>
+          <p class="local-note">
+            تجربة معاينة — يُحفظ ردّكم على هذا الجهاز فقط.
+          </p>
+        </form>
+        <div
+          id="rsvp-response"
+          class="rsvp-response"
+          role="status"
+          aria-live="polite"
+          hidden
+        ></div>
+        <button
+          id="rsvp-edit"
+          class="editorial-link rsvp-edit"
+          type="button"
+          hidden
+        >
+          تعديل الرد <span aria-hidden="true">↗</span>
+        </button>
+      </section>
+
+      <footer
+        id="final-scene"
+        class="final-scene scene-dark"
+        data-scene
+        aria-labelledby="final-names"
+      >
+        <div class="final-stars" aria-hidden="true"></div>
+        <div
+          class="final-moon moon"
+          data-parallax="0.035"
+          aria-hidden="true"
+        ></div>
+        <div class="final-arch" aria-hidden="true"></div>
+        <img
+          src="assets/botanical.svg"
+          class="final-flowers final-flowers-right"
+          alt=""
+          aria-hidden="true"
+        /><img
+          src="assets/botanical.svg"
+          class="final-flowers final-flowers-left"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="final-prologue">
+          <p>وفي النهاية...</p>
+          <p>لم تكن هذه نهاية حكاية.</p>
+          <p>بل أول صفحة منها.</p>
+        </div>
+        <div class="final-love">
+          <span class="final-eyebrow">بل أول صفحة منها.</span>
+          <h2 id="final-names" class="final-names">
+            <span data-groom>أحمد</span><i aria-label="و">&amp;</i
+            ><span data-bride>مريم</span>
+          </h2>
+          <span class="final-date" data-date-dotted dir="ltr"
+            >18 · 10 · 2026</span
+          >
+          <p>ننتظركم بكل الحب.</p>
+        </div>
+        <div id="secret-ending" class="secret-ending">
+          <svg viewBox="0 0 150 40" fill="none" aria-hidden="true">
+            <path
+              data-draw
+              pathLength="1"
+              d="M8 29C30 6 39 34 60 21S92 8 103 22C119 39 127 16 142 12"
+            /></svg
+          ><span>يتبع...</span>
+        </div>
+        <div class="studio-brand">
+          <p>صُممت هذه الحكاية بواسطة</p>
+          <a
+            class="studio-logo"
+            href="https://www.instagram.com/hekaya.studio/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="حكاية ستوديو على إنستغرام، نافذة جديدة"
+            ><span class="studio-symbol" aria-hidden="true">حكاية</span
+            ><span dir="ltr">HEKAYA STUDIO</span></a
+          ><a
+            class="studio-instagram"
+            data-instagram
+            href="https://www.instagram.com/hekaya.studio/"
+            target="_blank"
+            rel="noopener noreferrer"
+            dir="ltr"
+            >@hekaya.studio</a
+          ><span class="studio-tagline">لكل لحظة… حكاية.</span>
+        </div>
+        <span class="final-colophon" dir="ltr"
+          >MADE WITH LOVE · DAMASCUS · 2026</span
+        >
+      </footer>
+    </main>
+
+    <dialog id="lightbox" class="lightbox" aria-labelledby="lightbox-caption">
+      <button
+        id="lightbox-close"
+        class="lightbox-close"
+        type="button"
+        aria-label="إغلاق معرض الصور"
+      >
+        ×
+      </button>
+      <div id="lightbox-artwork" class="lightbox-artwork"></div>
+      <div class="lightbox-bottom">
+        <button id="lightbox-prev" type="button" aria-label="الصورة السابقة">
+          →
+        </button>
+        <div>
+          <p id="lightbox-caption"></p>
+          <span id="lightbox-counter" dir="ltr"></span>
+        </div>
+        <button id="lightbox-next" type="button" aria-label="الصورة التالية">
+          ←
+        </button>
+      </div>
+    </dialog>
+    <noscript
+      ><style>
+        .intro,
+        .preloader {
+          display: none !important;
+        }
+        body.intro-pending {
+          overflow: auto !important;
+        }
+        main {
+          visibility: visible !important;
+        }
+        .hero-sequence,
+        .hero-topline,
+        .scroll-invitation,
+        .hero-footer-note,
+        .hero-sequence > * {
+          opacity: 1 !important;
+        }
+        .hero-prologue {
+          display: none;
+        }
+        .couple-names > span {
+          opacity: 1 !important;
+          transform: none !important;
+          filter: none !important;
+        }
+        .final-love,
+        .studio-brand {
+          opacity: 1 !important;
+        }
+        .final-prologue {
+          display: none;
+        }
+        .rings-first,
+        .rings-last {
+          opacity: 1 !important;
+        }
+        #rsvp-form {
+          display: none;
+        }
+      </style>
+      <div class="noscript-message">
+        لتجربة الحركة وتأكيد الحضور، يرجى تفعيل JavaScript.
+      </div></noscript
+    >
+  </body>
+</html>
