@@ -44,12 +44,13 @@ const weddingData = {
     measureTasks: [],
   };
 
-  /* Enable only after adding the optional audio files to assets/. */
+  /* The soundtrack starts only after the visitor opens the invitation. */
   const audioConfig = {
-    enabled: false,
-    music: "assets/music.mp3",
-    curtain: "assets/curtain.mp3",
-    chime: "assets/chime.mp3",
+    enabled: true,
+    music:
+      "assets/voice/موسيقى فرنسية لدخلة العروسة للقاعة روعة ( أقرأ العرض بالوصف ).mp4",
+    curtain: null,
+    chime: null,
   };
   const soundtrack = {
     enabled: false,
@@ -227,6 +228,7 @@ const weddingData = {
        const chimeSound = new Audio("assets/chime.mp3"); */
     if (!audioConfig.enabled) return;
     ["music", "curtain", "chime"].forEach((name) => {
+      if (!audioConfig[name]) return;
       const audio = new Audio(audioConfig[name]);
       audio.preload = "none";
       audio.volume = name === "music" ? 0.24 : 0.15;
